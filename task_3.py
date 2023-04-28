@@ -9,3 +9,13 @@
 --- обязательно!!! усложните задачу, "отловив" исключение,
 придумайте как это сделать
 """
+words = ['attribute', 'класс', 'функция', 'type']
+
+for i in words:
+    try:
+        i = bytes(i, encoding='ascii')
+    except UnicodeEncodeError:
+        print(f"Слово '{i}' невозможно записать в байтовом типе ")
+    else:
+        print(i, type(i))
+    print()

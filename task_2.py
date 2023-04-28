@@ -10,3 +10,8 @@
 --- b'class' - используйте маркировку b''
 --- используйте списки и циклы, не дублируйте функции
 """
+word_list = [b'class', b'function', b'method']
+
+for word in word_list:
+    print(
+        f'Тип: {type(word)}, Содержимое: {word}, Длина: {len(word)} символов')
